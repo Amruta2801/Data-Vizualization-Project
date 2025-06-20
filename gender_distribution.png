@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+# Count how many people are in each gender category
+gender_counts = df['Gender'].value_counts()
+
+# Plotting the bar chart
+plt.figure(figsize=(6, 4))
+plt.bar(gender_counts.index, gender_counts.values, color='skyblue')
+plt.title('Gender Distribution')
+plt.xlabel('Gender')
+plt.ylabel('Count')
+plt.tight_layout()
+plt.show()
